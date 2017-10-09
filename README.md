@@ -10,4 +10,4 @@ As a developer, I want to style the CSS in a way that the visiting user has clea
 
 
 APFT-Coach is an application for United States Army Service members and any person that wants to calculate potential test scores for passing the Army Physical Fitness Test. This is a practical tool for test administrators as well as individuals to use before, during and after the APFT. Administrators can use this web app to calculate and display results for several users at a time.
-Results will include total scores for each physical event such as the Push-ups, Sit-up and 2 mile run events. Administrators will also have the ability to provide real time feedback on body fat composition for test takers. 
+Results will include total scores for each physical event such as the Push-ups, Sit-up and 2 mile run events. Administrators will also have the ability to provide real time feedback to users on their own body fat composition. 
