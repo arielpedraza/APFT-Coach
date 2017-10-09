@@ -2,26 +2,71 @@
 border: 1px solid red;
 }
 
-nav {
+header nav {
   width: 960px;
   margin: 0 auto;
 }
 
+header {
+  position: relative;
+}
+
 header img {
-  margin-top: 5px;
+  margin-top: 0px;
   float: left;
-  margin-right: 300px;
+  margin-right: 470px;
+  margin-bottom: 30px;
 }
 
 header h3 {
-  margin-top: 15px;
-  clear: both;
+  position: absolute;
+  margin-top: 100px;
   margin-right: 300px;
 }
 
 header ul li {
-  float: right;
   display: inline-block;
   margin-top: 40px;
-  margin-right: 70px;
+  margin-right: 20px;
+}
+
+footer {
+  clear: both;
+}
+
+footer nav {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+footer ul li:first-child {
+  margin-right: 470px;
+}
+
+#reference-pane {
+  float: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+#sign-up {
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+#sign-in {
+  float: right;
+  margin-top: 15px;
+}
+
+#data-entry-pane {
+  margin-left: 30px;
+  margin-right: 30px;
 }
