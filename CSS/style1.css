@@ -1,10 +1,10 @@
 * {
-/*border: 1px solid red;*/
+border: 1px solid red;
 }
 
 header nav {
   width: 960px;
-  margin: 0 auto;
+  margin-left: 30px;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 header img {
   margin-top: 0px;
   float: left;
-  margin-right: 470px;
+  margin-right: 490px;
   margin-bottom: 30px;
 }
 
@@ -36,16 +36,20 @@ footer {
 
 footer nav {
   width: 960px;
-  margin: 0 auto;
+}
+
+footer ul {
+    margin: 0 auto;
 }
 
 footer ul li {
   display: inline-block;
   margin-right: 2px;
+  text-decoration: none;
 }
 
 footer ul li:first-child {
-  margin-right: 470px;
+  margin-right: 520px;
 }
 
 .reference-pane {
@@ -71,7 +75,13 @@ footer ul li:first-child {
   margin-right: 30px;
 }
 
-.next {
-  margin-top: 30px;
-  margin-left: 490px;
+.next-back-buttons {
+  margin-top: 20px;
+  margin-left: 400px;
+  margin-bottom: 20px;
+  border: 10px;
+}
+
+.back-button {
+  margin-right: 20px;
 }
