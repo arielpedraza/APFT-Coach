@@ -1,5 +1,5 @@
 * {
-border: 1px solid red;
+/*border: 1px solid red;*/
 }
 
 header nav {
@@ -48,25 +48,30 @@ footer ul li:first-child {
   margin-right: 470px;
 }
 
-#reference-pane {
+.reference-pane {
   float: left;
   margin-left: 30px;
-  margin-right: 30px;
+  margin-right: 122px;
   margin-bottom: 30px;
 }
 
-#sign-up {
-  float: right;
-  margin-top: 15px;
-  margin-right: 10px;
+.sign-log {
+  width: 125px;
+  overflow: auto;
+  margin-top: 40px;
 }
 
-#sign-in {
-  float: right;
-  margin-top: 15px;
+.sign-log #top-in {
+  float: left;
+  margin-top: 20px;
 }
 
-#data-entry-pane {
+.data-entry-pane {
   margin-left: 30px;
   margin-right: 30px;
+}
+
+.next {
+  margin-top: 30px;
+  margin-left: 490px;
 }
