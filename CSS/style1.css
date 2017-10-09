@@ -1,3 +1,27 @@
 * {
+border: 1px solid red;
+}
 
+nav {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header img {
+  margin-top: 5px;
+  float: left;
+  margin-right: 300px;
+}
+
+header h3 {
+  margin-top: 15px;
+  clear: both;
+  margin-right: 300px;
+}
+
+header ul li {
+  float: right;
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 70px;
 }
