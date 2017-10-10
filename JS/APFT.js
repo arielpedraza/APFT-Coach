@@ -8,20 +8,30 @@ function ServiceMember(name, gender, age) {
   this.name = name;
   this.gender = gender;
   this.age = age;
-  this.height;
-  this.weight;
-  this.isFat = false;
-  // this.maleData = 0;
-  // this.femaleData = 0;
+  this.height = 0;
+  this.weight = 0;
+  this.neck = 0;
+  this.waist = 0;
+  this.hips = 0;
   this.testHistory = [];
-  this.neck;
-  this.waist;
-  this.hips;
+  this.isFat = false;
   ServiceMember.allMembers.push(this);
 }
 
 ServiceMember.prototype.checkIfFat = function() {
   //
+};
+
+ServiceMember.prototype.getAge = function(dateString) {
+  var today = new Date();
+  var birthDate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var month = today.getMonth() - birthDate.getMonth();
+  if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  this.age = age;
+  return age;
 };
 
 function checkLocalStorage(name) {
