@@ -1,18 +1,18 @@
 'use strict';
 
 var formEl = document.getElementById('user-input');
-var currentUserIndex = 0;
+// var currentUserIndex = 0;
 ServiceMember.allMembers = [];
 
-function ServiceMember(name, gender, age, height) {
+function ServiceMember(name, gender, age, height, weight, neck, waist, hips) {
   this.name = name;
   this.gender = gender;
   this.age = age;
   this.height = height;
-  this.weight = 0;
-  this.neck = 0;
-  this.waist = 0;
-  this.hips = 0;
+  this.weight = weight;
+  this.neck = neck;
+  this.waist = waist;
+  this.hips = hips;
   this.testHistory = [];
   this.isFat = false;
   ServiceMember.allMembers.push(this);
@@ -35,8 +35,26 @@ ServiceMember.prototype.checkIfFat = function() {
   }
   //check gender to determine which array to use
   var j = heightRange.indexOf(Math.round(this.height));
-  console.log(i);
-  console.log(j);
+  //check cross section
+  if (this.gender === 1) {
+    //use male chart
+    if (this.weight < maleWeightByAgeAndHeight[j][i]){
+      this.isFat = false;
+    }else{
+      this.isFat = true;
+    }
+  } else {
+    //use female chart
+    if (this.weight < femaleWeightByAgeAndHeight[j][i]){
+      this.isFat = false;
+    } else {
+      this.isFat = true;
+    }
+  }
+};
+
+ServiceMember.prototype.calculateBodyFat = function() {
+  //
 };
 
 ServiceMember.prototype.getAge = function(dateString) {
@@ -51,55 +69,28 @@ ServiceMember.prototype.getAge = function(dateString) {
   return age;
 };
 
-function checkLocalStorage(name) {
-  console.log('Check Local Storage called');
-  if(!window.localStorage.allMembers){
-    console.log('local storage does NOT exist');
-    return false;
-  }else{
-    console.log('local storage exists!');
-    for (var i in ServiceMember.allMembers){
-      if (ServiceMember.allMembers[i].name === name){
-        console.log('User exists in local storage');
-        currentUserIndex = i;
-        return true;
-      }
-    }
-    console.log('User does not exist');
-    return false;
-  }
-}
-
-function saveProgress(){
-  localStorage.setItem('allMembers', JSON.stringify(ServiceMember.allMembers));
-}
-
 function formEventHandler(event) {
   event.preventDefault();
-  console.log('Form Event Handler called');
   var enteredName = event.target.name.value;
   var enteredGender = parseInt(event.target.gender.value);
   var enteredAge = parseInt(event.target.age.value);
   var enteredHeight = parseInt(event.target.height.value);
-  //check if user in local storage
-  if (checkLocalStorage(enteredName)){
-    //if exists - load storage and add info to history array
-    ServiceMember.allMembers = JSON.parse(localStorage.getItem('allMembers'));
-    ServiceMember.allMembers[currentUserIndex].age = enteredAge;
-    saveProgress();
+  var enteredWeight = parseInt(event.target.weight.value);
+  var enteredNeck = parseInt(event.target.neck.value);
+  var enteredWaist = parseInt(event.target.waist.value);
+  var enteredHips = parseInt(event.target.hips.value);
+
+  var newUser = new ServiceMember(enteredName, enteredGender, enteredAge, enteredHeight, enteredWeight, enteredNeck, enteredWaist, enteredHips);
+
+  newUser.checkIfFat();
+
+  if (newUser.isFat){
+    // newUser.calculateBodyFat();
+    window.location.href = 'HTML/Circumference.html';
   } else {
-    //else - create new instance and save data
-    new ServiceMember(enteredName, enteredGender, enteredAge, enteredHeight);
-    saveProgress();
-  }
-  //check if height and weight within threshold
-  if (ServiceMember.allMembers[currentUserIndex].checkIfFat()){
-    //
+    window.location.href = 'HTML/TestEntry.html';
+    //move on to next page?
   }
 }
-
-// new ServiceMember('Kerry', true, '32');
-// new ServiceMember('Ariel', true, '31');
-// new ServiceMember('Dre', true, '34');
 
 formEl.addEventListener('submit', formEventHandler);
