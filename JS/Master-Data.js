@@ -1,6 +1,6 @@
 //(M & F).1.1 First test of user input using ageRange[i] (4 indicies) column
 
-var ageRange = [17-20yrs, 21-27yrs, 28-39yrs, 40+yrs]
+var ageRange = ["17-20yrs", "21-27yrs", "28-39yrs", "40+yrs"]
 
 //(M & F).1.2 First test of user input using heightRange[j] (23 indicies) row
 
