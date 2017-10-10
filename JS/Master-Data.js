@@ -4,7 +4,7 @@ var ageRange = ["17-20yrs", "21-27yrs", "28-39yrs", "40+yrs"]
 
 //(M & F).1.2 First test of user input using heightRange[j] (23 indicies) row
 
-var heightRange = [58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80]
+var heightRange = ["58", 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, "69", 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80]
 
 // (F).1.3 First test of user input using ageRange[i] && heightRange[j] = femaleWeightByAgeAndHeight[i][j] (4 indicies)
 
