@@ -51,11 +51,12 @@
             <option value="0">Female</option>
           </select>
 
-          <label for="height">Height (in inches to half inch): </label>
-          <input type="number" name="height" size="10" required/>
-
           <label for="testdate">Test Date:</label>
           <input type="date" name="testdate" required/>
+
+          <label for="height">Height (in inches to half inch): </label>
+          <input type="number" step="0.5" min="58" value="58" name="height" size="10" required/>
+
 
           <label for="weight">Weight:</label>
           <input type="number" name="weight" size="10" required/>
@@ -88,5 +89,6 @@
       </ul>
     </nav>
   </footer>
+  <script src="JSData/Master-Data.js"></script>
   <script src="JS/APFT.js"></script>
 </html>
