@@ -31,10 +31,7 @@
 
         <form class="user-input" action="index.html" method="post">
           <fieldset>
-            <legend><h2>APFT Rangefinder</h2></legend>
-
-          <label for="name">Soldier Name:</label>
-          <input name="name" type="text" size ="30"/>
+            <legend>APFT Rangefinder</legend>
 
           <!-- <label for="age">Age: </label>
           <input name="age" type="number" size="30" /> -->
@@ -51,23 +48,26 @@
             <option value="0">Female</option>
           </select>
 
-          <label for="height">Height (in inches to half inch): </label>
-          <input name="age" type="number" size="30" />
+          <label for="name">Soldier Name:</label>
+          <input name="name" type="text" size ="30"/>
+
+          <label for="height">Height in inches: </label>
+          <input name="age" type="number" step="0.5" value="58" size="30" required>
 
           <label for="testdate">Test Date:</label>
           <input type="date" name="testdate">
 
           <label for="weight">Weight:</label>
-          <input type="number" name="weight">
+          <input type="number" name="weight" required>
 
           <label id="female-input" for="neck">Neck:</label>
-          <input type="number" name="neck">
+          <input type="number" name="neck" step="0.5" required>
 
           <label for="waist">Waist:</label>
-          <input type="number" name="waist">
+          <input type="number" name="waist" step="0.5" required>
 
           <label id="female-input" for="hips">Hips:</label>
-          <input type="number" name="hips">
+          <input type="number" name="hips" step="0.5">
 
           <button type="submit">Submit Soldier info</button>
         </fieldset>
