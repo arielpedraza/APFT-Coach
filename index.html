@@ -26,7 +26,35 @@
       <img id="top-up" src="http://placehold.it/125x80/000" alt="">
       <img id="top-in" src="http://placehold.it/125x80/000" alt="">
     </div>
-    <img class="data-entry-pane" src="http://placehold.it/960x270/000" alt="">
+    <!-- <img class="data-entry-pane" src="http://placehold.it/960x270/000" alt=""> -->
+    <div class="data-entry-pane">
+    <form id="add-modify-form">
+        <fieldset>
+          <legend>APFT Rangefinder</legend>
+          <label for="username">Name:</label>
+          <input type="text" name="username">
+          <select id="gender">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+          </select>
+          <label for="age">Age:</label>
+          <input type="number" name="age">
+          <label for="testdate">Test Date:</label>
+          <input type="date" name="testdate">
+          <label for="height">Height:</label>
+          <input type="number" name="height">
+          <label for="weight">Weight:</label>
+          <input type="number" name="weight">
+          <label id="female-input" for="neck">Neck:</label>
+          <input type="number" name="neck">
+          <label for="waist">Waist:</label>
+          <input type="number" name="waist">
+          <label id="female-input" for="hips">Hips:</label>
+          <input type="number" name="hips">
+          <button type="submit">Next</button>
+        </fieldset>
+      </form>
+    </div>
     <div class ="next-back-buttons">
       <a href="#"><img class="back-button" src="http://placehold.it/125x80/000" alt=""></a>
       <a href="HTML/TestEntry.html"><img class="next-button" src="http://placehold.it/125x80/000" alt=""></a>
