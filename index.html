@@ -26,9 +26,29 @@
       <img id="top-up" src="http://placehold.it/125x80/000" alt="">
       <img id="top-in" src="http://placehold.it/125x80/000" alt="">
     </div>
-    <img class="data-entry-pane" src="http://placehold.it/960x270/000" alt="">
+    <div class="data-entry-pane">
+        <h2>APFT Rangefinder</h2>
+
+        <form class="user-input" action="index.html" method="post">
+
+          <label for="name">Soldier Name:</label>
+          <input name="name" type="text" size ="30"/>
+
+          <label for="age">Age: </label>
+          <input name="age" type="number" size="30" />
+
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+          <label for="height">Height (in inches to half inch): </label>
+          <input name="age" type="number" size="30" />
+
+          <button type="submit">Submit Soldier info</button>
+        </form>
+    </div>
     <div class ="next-back-buttons">
-      <a href="#"><img class="back-button" src="http://placehold.it/125x80/000" alt=""></a>
       <a href="HTML/TestEntry.html"><img class="next-button" src="http://placehold.it/125x80/000" alt=""></a>
     </div>
   </body>
