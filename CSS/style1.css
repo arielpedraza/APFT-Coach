@@ -42,22 +42,26 @@ header ul li {
   margin-right: 20px;
 }
 
-div form {
+/*div form {
   text-align: center;
   margin-left: 25px;
   margin-top: 5px;
-}
+}*/
 
 div form input {
   display: block;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
   border: 0;
   margin-top: 2px;
+  background-color: rgba(226, 226, 221, 0.8);
+  border: none;
+  color: black;
+  padding: 1px 2px;
+  text-decoration: none;
+  margin: 1px 2px;
+  cursor: pointer;
 }
 
-div form input {
-
-}
 
 footer {
   clear: both;
@@ -101,16 +105,6 @@ padding: 3px 8px;
 text-align: left;
 }
 
-input {
-    background-color: rgba(221, 216, 216, 0.8);
-    border: none;
-    color: black;
-    padding: 1px 2px;
-    text-decoration: none;
-    margin: 1px 2px;
-    cursor: pointer;
-}
-
 .reference-pane {
   opacity: 0.3;
   border: 2px red;
@@ -136,12 +130,12 @@ input {
 .data-entry-pane {
   position: relative;
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 960px;
   height: 325px;
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .next-back-buttons {
