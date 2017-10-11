@@ -232,7 +232,7 @@ var femaleHeightRange = [58, 58.5, 59, 59.5, 60, 60.5, 61, 61.5, 62, 62.5, 63, 6
 
 // //(F).2.3 Second test of user input using femaleHeightRange[i]femaleCircumferenceRange[j] = femaleBodyFat[k]  (69 arrays with 38 indicies each)
 
-var femaleBodyFatTable =
+var femaleBodyFat =
 
 [
 

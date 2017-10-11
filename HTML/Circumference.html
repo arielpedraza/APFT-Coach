@@ -12,9 +12,8 @@
     <nav>
       <img src="../img/USArmy_75px_tall.png">
       <h3>The Premiere APFT Coach</h3>
-      <h1>Circumference!!!</h1>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
+      <ul id="links">
+        <li><a href="#">Home</a></li>
         <li><a href="MyChart.html">My APFT</a></li>
         <li><a href="Charts.html">APFT Explained</a></li>
         <li><a href="AboutUs.html">About Us</a></li>
@@ -28,10 +27,27 @@
       <img id="top-up" src="http://placehold.it/125x80/000" alt="">
       <img id="top-in" src="http://placehold.it/125x80/000" alt="">
     </div>
-    <img class="data-entry-pane" src="http://placehold.it/960x270/000" alt="">
+    <div class="data-entry-pane">
+
+        <form id="user-input" action="index.html" method="post">
+          <fieldset>
+            <legend>APFT Rangefinder</legend>
+
+          <label id="female-input1" for="neck">Neck:</label>
+          <input type="number" name="neck" step="0.5" size="10" required>
+
+          <label id="female-input2" for="waist">Waist:</label>
+          <input type="number" name="waist" step="0.5" size="10" required>
+
+          <label id="female-input3" for="hips">Hips:</label>
+          <input type="number" name="hips" step="0.5" size="10">
+
+          <button type="submit">Submit Soldier info</button>
+        </fieldset>
+      </form>
+    </div>
     <div class ="next-back-buttons">
-      <a href="../index.html"><img class="back-button" src="http://placehold.it/125x80/000" alt=""></a>
-      <a href="TestResults.html"><img class="next-button" src="http://placehold.it/125x80/000" alt=""></a>
+      <a href="TestEntry.html"><img class="next-button" src="http://placehold.it/125x80/000" alt=""></a>
     </div>
   </body>
   <footer>
@@ -45,4 +61,6 @@
       </ul>
     </nav>
   </footer>
+  <script src="../JSData/Master-Data.js"></script>
+  <script src="../JS/APFT.js"></script>
 </html>
