@@ -3,7 +3,6 @@
 var formEl = document.getElementById('user-input');
 var genderInput = document.getElementsByClassName('female-input');
 var maleInput = document.getElementsByClassName('male-input');
-// var currentUserIndex = 0;
 ServiceMember.allMembers = [];
 
 function ServiceMember(name, gender, age, height, weight) {
@@ -15,6 +14,11 @@ function ServiceMember(name, gender, age, height, weight) {
   this.neck;
   this.waist;
   this.hips;
+  this.ageRange = '';
+  this.genderStr = '';
+  this.pushUps = 0;
+  this.sitUps = 0;
+  this.runTime = 0;
   this.testHistory = [];
   this.isFat = false;
   this.fatPercent;
@@ -83,6 +87,40 @@ ServiceMember.prototype.getAge = function(dateString) {
   }
   this.age = age;
   return age;
+};
+
+ServiceMember.prototype.setAgeRange = function() {
+  if (this.age >= 17 && this.age <= 21) {
+    this.ageRange = '17-21';
+  } else if (this.age >= 22 && this.age <= 26) {
+    this.ageRange = '22-26';
+  } else if (this.age >= 27 && this.age <= 31) {
+    this.ageRange = '27-31';
+  } else if (this.age >= 32 && this.age <= 36) {
+    this.ageRange = '32-36';
+  } else if (this.age >= 37 && this.age <= 41) {
+    this.ageRange = '37-41';
+  } else if (this.age >= 42 && this.age <= 46) {
+    this.ageRange = '42-46';
+  } else if (this.age >= 47 && this.age <= 51) {
+    this.ageRange = '47-51';
+  } else if (this.age >= 52 && this.age <= 56) {
+    this.ageRange = '52-56';
+  } else if (this.age >= 57 && this.age <= 61) {
+    this.ageRange = '57-61';
+  } else if (this.age >= 62) {
+    this.ageRange = '62+';
+  } else {
+    console.log('age below 17');
+  }
+};
+
+ServiceMember.prototype.setGenderStr = function() {
+  if(this.gender){
+    this.genderStr = 'male';
+  }else{
+    this.genderStr = 'female';
+  }
 };
 
 function bodyFatCalculationM(event) {
@@ -158,8 +196,9 @@ function formEventHandler(event) {
   var enteredWeight = parseInt(event.target.weight.value);
 
   var newUser = new ServiceMember(enteredName, enteredGender, enteredAge, enteredHeight, enteredWeight);
-
+  newUser.setAgeRange();
   newUser.checkIfFat();
+  newUser.setGenderStr();
 
   if (newUser.isFat){
     newUser.displayNewInput();
