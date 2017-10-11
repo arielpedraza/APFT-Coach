@@ -1,42 +1,56 @@
 'use strict';
 
-function ServiceMember(gender, age) {
+ServiceMember.allMembers = [];
+
+function ServiceMember(name, gender, age, height, weight) {
+  this.name = name;
   this.gender = gender;
   this.age = age;
+  this.height = height;
+  this.weight = weight;
+  this.neck;
+  this.waist;
+  this.hips;
   this.ageRange = '';
+  this.genderStr = '';
   this.pushUps = 0;
   this.sitUps = 0;
   this.runTime = 0;
-};
+  this.testHistory = [];
+  this.isFat = false;
+  this.fatPercent;
+  this.passBodyComp = false;
+  ServiceMember.allMembers.push(this);
+}
+
+ServiceMember.allMembers = JSON.parse(localStorage.getItem('allMembers'));
 
 var pushUpsEntry = document.getElementById('pushUps');
 var sitUpsEntry = document.getElementById('sitUps');
-var runTimeEntry = document.getElementById('runTime');
+var runTimeMin = document.getElementById('runTimeMin');
+var runTimeSec= document.getElementById('runTimeSec');
 
-console.log(apftTestResults.male['push-ups']['5'][0]['22-26']);
+// console.log(apftTestResults.male['push-ups']['5'][0]['22-26']);
 
-function handlePushUps(e) {
-  e.preventDefault();
-
-  var x = ServiceMember.allMembers[0].pushUps;
-  var pushUps = parseInt(e.target.pushUps.value);
-  x = pushUps;
+function handlePushUps(event) {
+  event.preventDefault();
+  console.log(pushUpsEntry.value);
+  console.log(ServiceMember.allMembers[0]);
+  ServiceMember.allMembers[0].pushUps = parseInt(pushUpsEntry.value);
 };
 
-function handleSitUps(e) {
-  e.preventDefault();
-  var y = ServiceMember.allMembers[0].sitUps;
-  var sitUps = parseInt(e.target.sitUps.value);
-  y = sitUps;
-};
+// function handleSitUps(event) {
+//   event.preventDefault();
+//   ServiceMember.sitUps = sitUpsEntry.value;
+// };
 
-function handleRunTime(e) {
-  e.preventDefault();
-  var z = ServiceMember.allMembers[0].runTime;
-  var runTime = parseInt(e.target.runTime.value);
-  z = runTime;
-};
+// function handleRunTime(event) {
+//   event.preventDefault();
+//   ServiceMember.runTime =
+// };
 
-pushUpsEntry.addEventListener('input', handlePushUps);
-sitUpsEntry.addEventListener('input', handleSitUps);
-runTimeEntry.addEventListener('input', handleRunTime);
+pushUpsEntry.onblur = handlePushUps;
+// pushUpsEntry.addEventListener('submit', handlePushUps);
+// sitUpsEntry.addEventListener('change', handleSitUps);
+// runTimeMin.addEventListener('input', handleRunTime);
+// runTimeSec.addEventListener('input', handleRunTime);

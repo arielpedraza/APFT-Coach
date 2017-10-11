@@ -183,7 +183,7 @@ function passBodyFatF(bodyFat){
 }
 
 function saveToLocal(){
-  localStorage.allMembers = JSON.stringify(ServiceMember.allMembers);
+  localStorage.setItem('allMembers', JSON.stringify(ServiceMember.allMembers));
   window.location.href = 'HTML/TestEntry.html';
 }
 
