@@ -1,47 +1,11 @@
-input[type=text], select, textarea {
-    width: 35%; /* Full width */
-    padding: 10px; /* Some padding */
-    border: 1px solid #ccc;
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    /*resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */*/
-}
+* {
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: White;
-    color: black;
-    padding: 5px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
-
-input[type=submit]:hover {
-    background-color: #888888;
-}
-
-label {
-position: absolute;
-}
-/* Add a background color and some padding around the form */
-.container {
-    padding: 10px;
-    width: 700px;
-    background-color: rgba(254, 195, 37, .3);
-}
-
 
 body {
 font-family: 'Crimson Text', serif;
 background-image: url("../img/background2.png");
 background-size: cover;
-}
-
-body div {
-  width: 970px;
 }
 
 header nav {
@@ -93,15 +57,34 @@ header h3 {
   margin-right: 300px;
 }
 
-ul h3 {
-  font-family: 'Lobster Two', cursive;
-}
-
 header ul li {
   display: inline-block;
   margin-top: 60px;
   margin-right: 10px;
 }
+
+div form {
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+
+div form input {
+  font-family: 'Crimson Text', serif;
+  display: block;
+  /*margin-left: 200px;*/
+  border: 0;
+  margin-top: 2px;
+  background-color: rgba(226, 226, 221, 1);
+  border: none;
+  color: black;
+  padding: 1px 2px;
+  text-decoration: none;
+  margin: 1px 2px;
+  cursor: pointer;
+}
+
 
 footer {
   clear: both;
@@ -125,6 +108,80 @@ footer ul li:first-child {
   margin-right: 580px;
 }
 
+form label {
+  font-family: 'Crimson Text', serif;
+}
+
+
+fieldset {
+font-family: 'Crimson Text', serif;
+position: absolute;
+border: 0;
+padding-left: 30px;
+width: 600px;
+text-align: left;
+font-weight: bold;
+font-family: sans-serif;
+}
+
+legend {
+font-family: 'Crimson Text', serif;
+background-color: rgba(254, 195, 37, .3);
+font-size: 25px;
+border: .5px solid black;
+border-radius: 5px;
+padding: 3px 8px;
+text-align: left;
+}
+
+.reference-pane {
+  background-color: rgba(254, 195, 37, .3);
+  width: 710px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 15px;
+  float: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+}
+
+.sign-log {
+  opacity: 0.3;
+  width: 100px;
+  overflow: auto;
+  margin-top: 70px;
+}
+
+.sign-log #top-in {
+  opacity: 0.3;
+  float: left;
+  margin-top: 20px;
+}
+
+.data-entry-pane {
+  background-color: rgba(254, 195, 37, .3);
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 960px;
+  height: 325px;
+  margin-top: 220px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+fieldset {
+  margin-left: 340px;
+}
+
+fieldset label {
+  text-align: center;
+}
+
+#gender {
+  display: block;
+}
+
 .next-back-buttons {
   opacity: 0.7;
   margin-top: 5px;
@@ -142,6 +199,7 @@ footer ul li:first-child {
   padding: 10px;
   font-size: 30px;
   width: 15px;
+  margin-top: 10px;
   text-align: center;
   text-decoration: none;
 }
@@ -177,13 +235,6 @@ footer ul li:first-child {
   border-radius: 50%;
 }
 
-
-
-#contact {
-  margin-left: 30px;
-  width: 750px;
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -192,16 +243,16 @@ footer ul li:first-child {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 300px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
-    /* Position the tooltip */
     position: absolute;
-    z-index: 1;
+      z-index: 1;
+      top: -5px;
+      left: 105%;
 }
 
 .tooltip:hover .tooltiptext {

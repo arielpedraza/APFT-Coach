@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="../CSS/style3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <header>
-    <!-- <div class="">
-    </div> -->
-    <nav>
-      <img src="../img/USArmy_75px_tall.png">
-      <h3>The Premiere APFT Coach</h3>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="MyChart.html">Calculator</a></li>
-        <!-- <li><a href="Charts.html">APFT Explained</a></li> -->
-        <li><a href="AboutUs.html">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../CSS/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans:700i" rel="stylesheet">
 
-  <body>
-    <img class="reference-pane" src="http://placehold.it/710x200/000" alt="">
-    <div class="sign-log">
-      <img id="top-up" src="http://placehold.it/125x80/000" alt="">
-      <img id="top-in" src="http://placehold.it/125x80/000" alt="">
-    </div>
+</head>
+<header>
+  <!-- <div class="">
+</div> -->
+<nav>
+  <img src="../img/USArmy_75px_tall.png">
+  <h3>Calculate Scores</h3>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="TestEntry.html">Calculator</a></li>
+    <!-- <li><a href="Charts.html">APFT Explained</a></li> -->
+    <li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+</nav>
+</header>
 
-    <div class="data-entry-pane">
+<body>
+  <div class="reference-pane">
+    <h2>Welcome Soldiers!</h2>
+    <p>The Army Physical Fitness Test (APFT) is designed to test the muscular strength, endurance, and cardiovascular respiratory fitness of soldiers in the Army. Soldiers are scored based on their performance in three events consisting of the push-up, sit-up, and a two-mile run, ranging from 0 to 100 points in each event. A minimum score of 60 points in each event is required to pass the test. The soldier's overall score is the sum of the points from the three events. If a soldier passes all three events, the total may range from 180 to 300.</p>
+  </div>
+
+  <div class="data-entry-pane">
     <p id="pushUpScore">
     </p>
     <p id="sitUpScore">
@@ -40,7 +41,8 @@
     <form id="user-input" action="index.html" method="post">
       <fieldset>
 
-        <legend>APFT Score Cruncher</legend>
+        <legend class="tooltip">APFT Score Cruncher
+        <span class="tooltiptext">Enter raw number of repetitions perfomed by the Soldier in fields below.</span></legend>
 
         <label for="pushUps">Push-ups:</label>
         <input id="pushUps" type="number" name="pushUps" size ="10" required/>
@@ -53,26 +55,21 @@
         <label for="runTimeSec">Run-time Seconds:</label>
         <input id="runTimeSec" type="number" name="runTimeSec" size ="10" required/>
 
-    </fieldset>
-  </form>
+      </fieldset>
+    </form>
   </div>
-
-    <div class ="next-back-buttons">
-      <a href="../index.html"><img class="back-button" src="http://placehold.it/125x80/000" alt=""></a>
-      <a href="TestResults.html"><img class="next-button" src="http://placehold.it/125x80/000" alt=""></a>
-    </div>
-  </body>
-  <footer>
-    <nav>
-      <ul>
-        <li>MIT License 2017</li>
-        <li><a href="#" class="fa fa-facebook"></a></li>
-        <li><a href="#" class="fa fa-twitter"></a></li>
-        <li><a href="#" class="fa fa-instagram"></a></li>
-        <li><a href="#" class="fa fa-youtube"></a></li>
-      </ul>
-    </nav>
-  </footer>
+</body>
+<footer>
+  <nav>
+    <ul>
+      <li>MIT License 2017</li>
+      <li><a href="#" class="fa fa-facebook"></a></li>
+      <li><a href="#" class="fa fa-twitter"></a></li>
+      <li><a href="#" class="fa fa-instagram"></a></li>
+      <li><a href="#" class="fa fa-youtube"></a></li>
+    </ul>
+  </nav>
+</footer>
 <script type="text/javascript" src="../JSData/Master-Data.js"></script>
 <script type="text/javascript" src="../JS/Calculator.js"></script>
 
