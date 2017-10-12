@@ -134,17 +134,17 @@ padding: 3px 8px;
 text-align: left;
 }
 
-
 .reference-pane {
   background-color: rgba(254, 195, 37, .3);
   width: 710px;
-  height: 200px;
+  height: 180px;
   border: 2px solid black;
   border-radius: 15px;
   float: left;
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 .data-entry-pane {
