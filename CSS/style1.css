@@ -1,7 +1,3 @@
-  * {
-
-}
-
 body {
 font-family: 'Crimson Text', serif;
 background-image: url("../img/background2.png");
@@ -10,7 +6,8 @@ background-size: cover;
 
 header nav {
   width: 960px;
-  margin-left: 30px;
+  margin: 0 auto 10px;
+  /*margin-left: 30px;*/
   height: 120px;
   background: #fec325;
   background: linear-gradient(to bottom, #fec325, #ead923);
@@ -104,6 +101,7 @@ footer {
 }
 
 footer nav {
+  margin: 0px auto;
   width: 960px;
 }
 
@@ -120,11 +118,6 @@ footer ul li {
 footer ul li:first-child {
   margin-right: 580px;
 }
-
-/*form {
-  display: flex;
-  flex-wrap: wrap;
-}*/
 
 form label {
   font-family: 'Crimson Text', serif;
@@ -143,11 +136,6 @@ fieldset {
   margin-top: 3px;
 }
 
-fieldset label, input, select, button {
-
-}
-
-
 legend {
 font-family: 'Crimson Text', serif;
 background-color: rgba(254, 195, 37, .3);
@@ -164,10 +152,7 @@ text-align: left;
   height: 200px;
   border: 2px solid black;
   border-radius: 15px;
-  float: left;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 10px;
+  margin: 10px auto;
   text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 20px;
@@ -178,32 +163,20 @@ text-align: left;
   border: 2px solid black;
   border-radius: 15px;
   width: 960px;
-  height: 325px;
-  margin-top: 220px;
-  margin-left: 30px;
-  margin-right: 10px;
+  height: 400px;
+  margin: 10px auto;
 }
 
 fieldset {
   margin-left: 340px;
 }
 
+button {
+  margin-top: 10px;
+}
 
 #gender {
   display: block;
-}
-
-.next-back-buttons {
-  opacity: 0.7;
-  margin-top: 5px;
-  margin-left: 400px;
-  margin-bottom: 5px;
-  border: 10px;
-}
-
-.back-button {
-  opacity: 0.3;
-  margin-right: 20px;
 }
 
 .fa {
@@ -213,19 +186,18 @@ fieldset {
   text-align: center;
   text-decoration: none;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .fa:hover {
   opacity: 0.7;
   }
 
-
 .fa-facebook {
   background: #3B5998;
   color: white;
   border-radius: 50%;
   }
-
 
 .fa-twitter {
   background: #55ACEE;
@@ -238,7 +210,6 @@ fieldset {
   color: white;
   border-radius: 50%;
 }
-
 
 .fa-youtube {
   background: #CC181E;
