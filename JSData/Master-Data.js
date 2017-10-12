@@ -919,5 +919,5 @@ var femaleBodyFat =
         }
     }
 }
-
-console.log(apftTestResults.male['push-ups']['5'][0]['22-26']);
+// 
+// console.log(apftTestResults.male['push-ups']['5'][0]['22-26']);
