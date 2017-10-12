@@ -132,14 +132,15 @@ form label {
 
 
 fieldset {
-font-family: 'Crimson Text', serif;
-position: absolute;
-border: 0;
-padding-left: 30px;
-width: 600px;
-text-align: left;
-font-weight: bold;
-font-family: sans-serif;
+  font-family: 'Crimson Text', serif;
+  position: absolute;
+  border: 0;
+  padding-left: 30px;
+  width: 600px;
+  text-align: left;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 3px;
 }
 
 fieldset label, input, select, button {
@@ -170,19 +171,6 @@ text-align: left;
   text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 20px;
-}
-
-.sign-log {
-  opacity: 0.3;
-  width: 100px;
-  overflow: auto;
-  margin-top: 70px;
-}
-
-.sign-log #top-in {
-  opacity: 0.3;
-  float: left;
-  margin-top: 20px;
 }
 
 .data-entry-pane {
@@ -224,6 +212,7 @@ fieldset {
   width: 15px;
   text-align: center;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .fa:hover {
