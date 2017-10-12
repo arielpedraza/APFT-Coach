@@ -32,17 +32,20 @@ position: absolute;
     background-color: rgba(254, 195, 37, .3);
 }
 
+div#contact {
+  width: 950px;
+  height: 228px;
 
-.container {
+}
+
+ .container {
   background-color: rgba(254, 195, 37, .3);
-  width: 960px;
-  height: 175px;
   border: 2px solid black;
   border-radius: 15px;
-  margin-left: 30px;
-  /*margin-right: 150px;*/
-  margin-top: 10px;
-  padding: 15px;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 5px;
+  margin: 20px;
 }
 
 
@@ -103,12 +106,19 @@ header h3 {
 }
 
 ul h3 {
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Archivo Black', sans-serif;
+  margin: 12px;
 }
 
 header ul li {
   display: inline-block;
   margin-top: 60px;
+  margin-right: 10px;
+}
+
+body section div ul {
+  text-decoration: none;
+  list-style: none;
   margin-right: 10px;
 }
 
@@ -134,17 +144,31 @@ footer ul li:first-child {
   margin-right: 580px;
 }
 
-.next-back-buttons {
-  opacity: 0.7;
-  margin-top: 5px;
-  margin-left: 400px;
-  margin-bottom: 5px;
-  border: 10px;
+#kerry {
+  float: left;
+  padding: 10px;
+  width: 11%;
+  height: 11%;
+  /*margin-top: 10px;*/
+  border-radius: 50%;
 }
 
-.back-button {
-  opacity: 0.3;
-  margin-right: 20px;
+#ariel {
+  float: left;
+  padding: 10px;
+  width: 11%;
+  height: 11%;
+  /*margin-top: 10px;*/
+  border-radius: 50%;
+}
+
+#dre {
+  float: left;
+  padding: 10px;
+  width: 11%;
+  height: 11%;
+  /*margin-top: 10px;*/
+  border-radius: 50%;
 }
 
 .fa {
@@ -218,13 +242,13 @@ footer ul li:first-child {
 .reference-pane {
   background-color: rgba(254, 195, 37, .3);
   width: 960px;
-  height: 500px;
+  height: 630px;
   border: 2px solid black;
   border-radius: 15px;
   margin-left: 30px;
-  margin-right: 150px;
   margin-top: 10px;
   font-family: 'Crimson Text', serif;
+  font-size: 17px;
 }
 
 #contact {
