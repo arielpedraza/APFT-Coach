@@ -3,6 +3,7 @@
 }
 
 body {
+font-family: 'Crimson Text', serif;
 background-image: url("../img/background2.png");
 background-size: cover;
 }
@@ -11,7 +12,10 @@ header nav {
   width: 960px;
   margin-left: 30px;
   height: 120px;
-  background-color: #fec325;
+  background: #fec325;
+  background: linear-gradient(to bottom, #fec325, #ead923);
+  box-shadow: 5px 5px 5px #888888;
+
 }
 
 header {
@@ -20,8 +24,24 @@ header {
 
 a {
   font-family: 'Josefin Sans', sans-serif;
+  color: black;
   text-decoration: none;
 }
+
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover, a:active { text-decoration: none; }
 
 header img {
   margin-top: 0px;
@@ -51,6 +71,7 @@ header ul li {
 
 
 div form input {
+  font-family: 'Crimson Text', serif;
   display: block;
   /*margin-left: 200px;*/
   border: 0;
@@ -87,8 +108,13 @@ footer ul li:first-child {
   margin-right: 580px;
 }
 
+form label {
+  font-family: 'Crimson Text', serif;
+}
+
 
 fieldset {
+font-family: 'Crimson Text', serif;
 position: absolute;
 border: 0;
 padding-left: 30px;
@@ -99,6 +125,7 @@ font-family: sans-serif;
 }
 
 legend {
+font-family: 'Crimson Text', serif;
 background-color: rgba(254, 195, 37, .3);
 font-size: 25px;
 border: .5px solid black;
@@ -113,9 +140,8 @@ text-align: left;
   height: 200px;
   border: 2px solid black;
   border-radius: 15px;
-  opacity: 0.3;
   float: left;
-  margin-left: 30px;
+  margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 10px;
 }
@@ -139,9 +165,21 @@ text-align: left;
   border-radius: 15px;
   width: 960px;
   height: 325px;
-  margin-top: 250px;
-  margin-left: 10px;
+  margin-top: 220px;
+  margin-left: 30px;
   margin-right: 10px;
+}
+
+fieldset {
+  margin-left: 340px;
+}
+
+fieldset label {
+  text-align: center;
+}
+
+#gender {
+  display: block;
 }
 
 .next-back-buttons {
