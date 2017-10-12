@@ -22,13 +22,33 @@
   </header>
 
   <body>
-    <img class="reference-pane" src="http://placehold.it/710x200/000" alt="">
-    <div class="sign-log">
-      <img id="top-up" src="http://placehold.it/125x80/000" alt="">
-      <img id="top-in" src="http://placehold.it/125x80/000" alt="">
+    <div class="reference-pane">
+      <h2>Welcome Soldiers!</h2>
+      <p>The Army Physical Fitness Test (APFT) is designed to test the muscular strength, endurance, and cardiovascular respiratory fitness of soldiers in the Army. Soldiers are scored based on their performance in three events consisting of the push-up, sit-up, and a two-mile run, ranging from 0 to 100 points in each event. A minimum score of 60 points in each event is required to pass the test. The soldier's overall score is the sum of the points from the three events. If a soldier passes all three events, the total may range from 180 to 300.</p>
     </div>
 
     <div class="data-entry-pane">
+    <form id="user-input" action="index.html" method="post">
+      <fieldset>
+
+        <legend>APFT Score Cruncher</legend>
+
+        <label for="pushUps">Push-ups:</label>
+        <input id="pushUps" type="number" name="pushUps" size ="10" required/>
+        <hr>
+
+        <label for="sitUps">Sit-ups:</label>
+        <input id="sitUps" type="number" name="sitUps" size ="10" required/>
+
+        <hr>
+
+        <label for="runTimeMin">Run-time Minutes:  &nbsp;&nbsp;Run-time Seconds:</label>
+        <input id="runTimeMin" type="number" name="runTimeMin" size ="5" required/>
+        <hr>
+        <label for="runTimeSec"></label>
+        <input id="runTimeSec" type="number" name="runTimeSec" size ="5" required/>
+    </fieldset>
+  </form>
     <p id="pushUpScore">
     </p>
     <p id="sitUpScore">
@@ -37,24 +57,6 @@
     </p>
     <p id="totalScore">
     </p>
-    <form id="user-input" action="index.html" method="post">
-      <fieldset>
-
-        <legend>APFT Score Cruncher</legend>
-
-        <label for="pushUps">Push-ups:</label>
-        <input id="pushUps" type="number" name="pushUps" size ="10" required/>
-
-        <label for="sitUps">Sit-ups:</label>
-        <input id="sitUps" type="number" name="sitUps" size ="10" required/>
-
-        <label for="runTimeMin">Run-time Minutes:</label>
-        <input id="runTimeMin" type="number" name="runTimeMin" size ="10" required/>
-        <label for="runTimeSec">Run-time Seconds:</label>
-        <input id="runTimeSec" type="number" name="runTimeSec" size ="10" required/>
-
-    </fieldset>
-  </form>
   </div>
 
     <div class ="next-back-buttons">
