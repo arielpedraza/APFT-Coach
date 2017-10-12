@@ -1,15 +1,11 @@
-* {
-/*border: 1px solid red;*/
-}
-
 input[type=text], select, textarea {
-    width: 25%; /* Full width */
+    width: 35%; /* Full width */
     padding: 10px; /* Some padding */
     border: 1px solid #ccc;
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     /*resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */*/
 }
 
@@ -24,29 +20,38 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: black;
+    background-color: #888888;
 }
 
+label {
+position: absolute;
+}
 /* Add a background color and some padding around the form */
 .container {
     padding: 10px;
-    margin: 15px;
+    width: 700px;
+    background-color: rgba(254, 195, 37, .3);
 }
 
-section div {
-  margin: 5px;
-  width: 960px;
-}
 
 body {
+font-family: 'Crimson Text', serif;
 background-image: url("../img/background2.png");
 background-size: cover;
+}
+
+body div {
+  width: 970px;
 }
 
 header nav {
   width: 960px;
   margin-left: 30px;
-  background-color: #fec325;
+  height: 120px;
+  background: #fec325;
+  background: linear-gradient(to bottom, #fec325, #ead923);
+  box-shadow: 5px 5px 5px #888888;
+
 }
 
 header {
@@ -54,9 +59,25 @@ header {
 }
 
 a {
-  font-family: 'Anton', sans-serif;
-  color: blue;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  text-decoration: none;
 }
+
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover, a:active { text-decoration: none; }
 
 header img {
   margin-top: 0px;
@@ -66,28 +87,23 @@ header img {
 }
 
 header h3 {
-  font-family: 'Bevan', open sans;
+  font-family: 'Josefin Sans', sans-serif;
   position: absolute;
   margin-top: 100px;
   margin-right: 300px;
 }
 
-header ul li {
-  display: inline-block;
-  margin-top: 40px;
-  margin-right: 20px;
+ul h3 {
+  font-family: 'Lobster Two', cursive;
 }
 
-/*div form {
-  text-align: center;
-  margin-left: 25px;
-  margin-top: 5px;
-}*/
+header ul li {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 10px;
+}
 
-
-
-
-/*footer {
+footer {
   clear: both;
 }
 
@@ -107,60 +123,7 @@ footer ul li {
 
 footer ul li:first-child {
   margin-right: 580px;
-}*/
-
-
-/*fieldset {
-position: absolute;
-border: 0;
-padding-left: 30px;
-width: 600px;
-text-align: left;
-font-weight: bold;
-font-family: sans-serif;
 }
-
-legend {
-background-color: #fec325;
-font-size: 25px;
-border: .5px solid black;
-border-radius: 5px;
-padding: 3px 8px;
-text-align: left;
-}*/
-
-/*.reference-pane {
-  opacity: 0.3;
-  border: 2px red;
-  float: left;
-  margin-left: 30px;
-  margin-right: 150px;
-  margin-bottom: 10px;
-}
-
-.sign-log {
-  opacity: 0.3;
-  width: 100px;
-  overflow: auto;
-  margin-top: 70px;
-}
-
-.sign-log #top-in {
-  opacity: 0.3;
-  float: left;
-  margin-top: 20px;
-}
-
-.data-entry-pane {
-  position: relative;
-  border: 2px solid black;
-  border-radius: 15px;
-  width: 960px;
-  height: 325px;
-  margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}*/
 
 .next-back-buttons {
   opacity: 0.7;
@@ -212,4 +175,35 @@ text-align: left;
   background: #CC181E;
   color: white;
   border-radius: 50%;
+}
+
+
+
+#contact {
+  margin-left: 30px;
+  width: 750px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

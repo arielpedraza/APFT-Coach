@@ -8,15 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans:700i" rel="stylesheet">
   </head>
   <header>
-    <!-- <div class="">
-    </div> -->
     <nav>
       <img src="img/USArmy_75px_tall.png">
       <h3>The Premiere APFT Coach</h3>
       <ul id="links">
         <li><a href="#">Home</a></li>
-        <li><a href="HTML/MyChart.html">My APFT</a></li>
-        <li><a href="HTML/Charts.html">APFT Explained</a></li>
+        <li><a href="HTML/TestEntry.html">Calculator</a></li>
+        <!-- <li><a href="HTML/Charts.html">APFT Explained</a></li> -->
         <li><a href="HTML/AboutUs.html">About Us</a></li>
       </ul>
     </nav>
@@ -24,15 +22,16 @@
 
   <body>
     <div class="reference-pane">
-      <h2>Welcome!</h2>
-      <p>Please fill out the form below and we will determine whether you need to enter more information. </p>
+      <h2>Welcome Soldiers!</h2>
+      <p>The Army Physical Fitness Test (APFT) is designed to test the muscular strength, endurance, and cardiovascular respiratory fitness of soldiers in the Army. Soldiers are scored based on their performance in three events consisting of the push-up, sit-up, and a two-mile run, ranging from 0 to 100 points in each event. A minimum score of 60 points in each event is required to pass the test. The soldier's overall score is the sum of the points from the three events. If a soldier passes all three events, the total may range from 180 to 300.</p>
     </div>
 
     <div class="data-entry-pane">
 
         <form id="user-input" action="index.html" method="post">
           <fieldset>
-            <legend>APFT Rangefinder</legend>
+            <legend class="tooltip">APFT Rangefinder
+            <span class="tooltiptext">Enter Soldier data in fields below to store and calculate values</span></legend>
 
           <label for="name">Soldier Name:</label>
           <input type="text" name="name" size ="30" required/>
