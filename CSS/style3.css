@@ -134,6 +134,7 @@ padding: 3px 8px;
 text-align: left;
 }
 
+
 .reference-pane {
   background-color: rgba(254, 195, 37, .3);
   width: 710px;
@@ -144,19 +145,6 @@ text-align: left;
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 10px;
-}
-
-.sign-log {
-  opacity: 0.3;
-  width: 100px;
-  overflow: auto;
-  margin-top: 70px;
-}
-
-.sign-log #top-in {
-  opacity: 0.3;
-  float: left;
-  margin-top: 20px;
 }
 
 .data-entry-pane {
@@ -170,11 +158,17 @@ text-align: left;
   margin-right: 10px;
 }
 
-fieldset {
-  margin-left: 340px;
+fieldset label:nth-last-child(-n+2){
+  display: inline-block;
+}
+
+fieldset input:nth-last-child(-n+2){
+  margin-left: 142px;
+  margin-top: -34px;
 }
 
 fieldset label {
+  background-color: rgba(238, 238, 238, 0.5);
   text-align: center;
 }
 
