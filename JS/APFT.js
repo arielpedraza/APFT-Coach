@@ -72,14 +72,17 @@ ServiceMember.prototype.displayNewInput = function() {
       maleInput[i].style.display = 'block';
     }
     formEl2.addEventListener('submit', bodyFatCalculationM);
+    alert('Unfortunately, you didn\'t pass the height/weight test.  Please enter your neck and abdomen tape measurements.')
     secondSubmit.style.display = 'block';
   } else {
     for (i = 0; i < genderInput.length; i++) {
       genderInput[i].style.display = 'block';
     }
     formEl2.addEventListener('submit', bodyFatCalculationF);
+    alert('Unfortunately, you didn\'t pass the height/weight test.  Please enter your neck, waist, and hip tape measurements.')
     secondSubmit.style.display = 'block';
   }
+
   firstSubmit.style.display = 'none';
 };
 

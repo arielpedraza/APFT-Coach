@@ -158,11 +158,17 @@ text-align: left;
   margin-right: 10px;
 }
 
-fieldset {
-  margin-left: 340px;
+fieldset label:nth-last-child(-n+2){
+  display: inline-block;
+}
+
+fieldset input:nth-last-child(-n+2){
+  margin-left: 142px;
+  margin-top: -34px;
 }
 
 fieldset label {
+  background-color: rgba(238, 238, 238, 0.5);
   text-align: center;
 }
 
@@ -170,11 +176,23 @@ fieldset label {
   display: block;
 }
 
+.next-back-buttons {
+  opacity: 0.7;
+  margin-top: 5px;
+  margin-left: 400px;
+  margin-bottom: 5px;
+  border: 10px;
+}
+
+.back-button {
+  opacity: 0.3;
+  margin-right: 20px;
+}
+
 .fa {
   padding: 10px;
   font-size: 30px;
   width: 15px;
-  margin-top: 10px;
   text-align: center;
   text-decoration: none;
 }

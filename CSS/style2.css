@@ -25,6 +25,13 @@ input[type=submit]:hover {
 label {
 position: absolute;
 }
+/* Add a background color and some padding around the form */
+.container {
+    padding: 10px;
+    width: 700px;
+    background-color: rgba(254, 195, 37, .3);
+}
+
 
 .container {
   background-color: rgba(254, 195, 37, .3);
@@ -127,11 +134,23 @@ footer ul li:first-child {
   margin-right: 580px;
 }
 
+.next-back-buttons {
+  opacity: 0.7;
+  margin-top: 5px;
+  margin-left: 400px;
+  margin-bottom: 5px;
+  border: 10px;
+}
+
+.back-button {
+  opacity: 0.3;
+  margin-right: 20px;
+}
+
 .fa {
   padding: 10px;
   font-size: 30px;
   width: 15px;
-  margin-top: 10px;
   text-align: center;
   text-decoration: none;
 }
@@ -164,6 +183,13 @@ footer ul li:first-child {
   background: #CC181E;
   color: white;
   border-radius: 50%;
+}
+
+
+
+#contact {
+  margin-left: 30px;
+  width: 750px;
 }
 
 .tooltip {
