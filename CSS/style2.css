@@ -2,6 +2,42 @@
 /*border: 1px solid red;*/
 }
 
+input[type=text], select, textarea {
+    width: 25%; /* Full width */
+    padding: 10px; /* Some padding */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */*/
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: White;
+    color: black;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    padding: 10px;
+    margin: 15px;
+}
+
+section div {
+  margin: 5px;
+  width: 960px;
+}
+
 body {
 background-image: url("../img/background2.png");
 background-size: cover;
@@ -48,22 +84,10 @@ header ul li {
   margin-top: 5px;
 }*/
 
-div form input {
-  display: block;
-  /*margin-left: 200px;*/
-  border: 0;
-  margin-top: 2px;
-  background-color: rgba(226, 226, 221, 0.8);
-  border: none;
-  color: black;
-  padding: 1px 2px;
-  text-decoration: none;
-  margin: 1px 2px;
-  cursor: pointer;
-}
 
 
-footer {
+
+/*footer {
   clear: both;
 }
 
@@ -83,10 +107,10 @@ footer ul li {
 
 footer ul li:first-child {
   margin-right: 580px;
-}
+}*/
 
 
-fieldset {
+/*fieldset {
 position: absolute;
 border: 0;
 padding-left: 30px;
@@ -103,9 +127,9 @@ border: .5px solid black;
 border-radius: 5px;
 padding: 3px 8px;
 text-align: left;
-}
+}*/
 
-.reference-pane {
+/*.reference-pane {
   opacity: 0.3;
   border: 2px red;
   float: left;
@@ -136,7 +160,7 @@ text-align: left;
   margin-top: 5px;
   margin-left: 10px;
   margin-right: 10px;
-}
+}*/
 
 .next-back-buttons {
   opacity: 0.7;
