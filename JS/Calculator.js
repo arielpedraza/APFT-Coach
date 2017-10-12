@@ -43,7 +43,10 @@ function getScores(a) {
     if (ServiceMember.allMembers[0].pushUps < 5) {
       x = 0;
       ServiceMember.allMembers[0].pushUpsScore = x;
-    } else if (ServiceMember.allMembers[0].pushUps > 77) {
+    } else if (ServiceMember.allMembers[0].gender && ServiceMember.allMembers[0].pushUps > 77) {
+      x = 100;
+      ServiceMember.allMembers[0].pushUpsScore = x;
+    } else if (!ServiceMember.allMembers[0].gender && ServiceMember.allMembers[0].pushUps > 50) {
       x = 100;
       ServiceMember.allMembers[0].pushUpsScore = x;
     } else {
@@ -52,7 +55,6 @@ function getScores(a) {
     }
     pEl = document.getElementById('pushUpScore');
     pEl.textContent = 'Score: ' + x;
-    updateTotalScore();
   }
   // if called by sit up event handler
   if (a === 2) {
@@ -68,7 +70,6 @@ function getScores(a) {
     }
     pEl = document.getElementById('sitUpScore');
     pEl.textContent = 'Score: ' + y;
-    updateTotalScore();
   }
   // if called by run second handler
   if (a === 3) {
@@ -100,9 +101,9 @@ function getScores(a) {
       z = apftTestResults[ServiceMember.allMembers[0].genderStr]['run'][z][0][ServiceMember.allMembers[0].ageRange];
       ServiceMember.allMembers[0].runScore = z;
     }
+    pEl = document.getElementById('runTimeScore');
+    pEl.textContent = 'Score: ' + z;
   }
-  pEl = document.getElementById('runTimeScore');
-  pEl.textContent = 'Score: ' + z;
   updateTotalScore();
 }
 
