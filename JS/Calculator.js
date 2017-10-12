@@ -27,6 +27,8 @@ function ServiceMember(name, gender, age, height, weight) {
 //Parsed information from first page
 ServiceMember.allMembers = JSON.parse(localStorage.getItem('allMembers'));
 
+ServiceMember.allMembers[0].runTimeMin = '0';
+ServiceMember.allMembers[0].runTimeSec = '00';
 ServiceMember.allMembers[0].totalScore = 0;
 ServiceMember.allMembers[0].runScore = 0;
 ServiceMember.allMembers[0].sitUpsScore = 0;
@@ -49,7 +51,7 @@ function getScores(a) {
       ServiceMember.allMembers[0].pushUpsScore = x;
     }
     pEl = document.getElementById('pushUpScore');
-    pEl.textContent = x;
+    pEl.textContent = 'Score: ' + x;
     updateTotalScore();
   }
   // if called by sit up event handler
@@ -65,17 +67,24 @@ function getScores(a) {
       ServiceMember.allMembers[0].sitUpsScore = y;
     }
     pEl = document.getElementById('sitUpScore');
-    pEl.textContent = y;
+    pEl.textContent = 'Score: ' + y;
     updateTotalScore();
   }
   // if called by run second handler
   if (a === 3) {
     //Used modulo to induce 6 sec intervals to second user input so that it would match JSON run data
     var temp = parseInt(ServiceMember.allMembers[0].runTimeSec);
-    if (temp % 6) {
+    if (temp % 6 || temp === 0) {
       temp = 6 - (temp % 6) + temp;
       //adds difference back to seconds if not a 6 sec interval
-      z = ServiceMember.allMembers[0].runTimeMin + '' + temp;
+      if (temp < 10){
+        z = ServiceMember.allMembers[0].runTimeMin + '0' + temp;
+      } else if (temp === 60) {
+        z = parseInt(ServiceMember.allMembers[0].runTimeMin) + 1;
+        z = z + '00';
+      } else {
+        z = ServiceMember.allMembers[0].runTimeMin + '' + temp;
+      }
     } else {
       ServiceMember.allMembers[0].runTime = runTimeMin.value + '' + runTimeSec.value;
       z = ServiceMember.allMembers[0].runTime;
@@ -93,7 +102,7 @@ function getScores(a) {
     }
   }
   pEl = document.getElementById('runTimeScore');
-  pEl.textContent = z;
+  pEl.textContent = 'Score: ' + z;
   updateTotalScore();
 }
 
@@ -104,7 +113,7 @@ function updateTotalScore() {
   console.log(ServiceMember.allMembers[0].runScore);
   console.log(ServiceMember.allMembers[0].totalScore);
   ServiceMember.allMembers[0].totalScore = ServiceMember.allMembers[0].pushUpsScore + ServiceMember.allMembers[0].sitUpsScore + ServiceMember.allMembers[0].runScore;
-  pEl.textContent = ServiceMember.allMembers[0].totalScore;
+  pEl.textContent = 'Total Score: ' + ServiceMember.allMembers[0].totalScore;
 }
 
 var pushUpsEntry = document.getElementById('pushUps');
@@ -115,34 +124,42 @@ var runTimeSec = document.getElementById('runTimeSec');
 // console.log(apftTestResults.male['push-ups']['5'][0]['22-26']);
 
 function handlePushUps(event) {
-  if (pushUpsEntry.value){
-    event.preventDefault();
+  event.preventDefault();
+  if (pushUpsEntry.value && (parseInt(pushUpsEntry.value) >= 0)){
     ServiceMember.allMembers[0].pushUps = parseInt(pushUpsEntry.value);
     getScores(1);
+  } else {
+    pushUpsEntry.value = null;
   }
 };
 
 function handleSitUps(event) {
-  if (sitUpsEntry.value){
-    event.preventDefault();
+  event.preventDefault();
+  if (sitUpsEntry.value && (parseInt(sitUpsEntry.value) >= 0)){
     ServiceMember.allMembers[0].sitUps = parseInt(sitUpsEntry.value);
     getScores(2);
+  } else {
+    sitUpsEntry.value = null;
   }
 };
 
 function handleRunMin(event) {
-  if (runTimeMin.value) {
-    event.preventDefault();
+  event.preventDefault();
+  if (runTimeMin.value && (parseInt(runTimeMin.value) >= 0)) {
     ServiceMember.allMembers[0].runTimeMin = runTimeMin.value;
+  } else {
+    runTimeMin.value = null;
   }
 };
 
 function handleRunSec(event) {
-  if (runTimeSec.value) {
-    event.preventDefault();
+  event.preventDefault();
+  if (runTimeSec.value && (parseInt(runTimeSec.value) >= 0) && (parseInt(runTimeSec.value) < 60) && !(runTimeSec.value.length > 2)) {
     ServiceMember.allMembers[0].runTimeSec = runTimeSec.value;
     // ServiceMember.allMembers[0].runTime = runTimeMin.value + '' + runTimeSec.value;
     getScores(3);
+  } else {
+    runTimeSec.value = null;
   }
 };
 
