@@ -169,19 +169,6 @@ text-align: left;
   margin-bottom: 10px;
 }
 
-.sign-log {
-  opacity: 0.3;
-  width: 100px;
-  overflow: auto;
-  margin-top: 70px;
-}
-
-.sign-log #top-in {
-  opacity: 0.3;
-  float: left;
-  margin-top: 20px;
-}
-
 .data-entry-pane {
   background-color: rgba(254, 195, 37, .3);
   border: 2px solid black;

@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="../CSS/style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans:700i" rel="stylesheet">
   </head>
   <header>
     <!-- <div class="">
@@ -14,7 +15,7 @@
       <h3>The Premiere APFT Coach</h3>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="MyChart.html">Calculator</a></li>
+        <li><a href="TestEntry.html">Calculator</a></li>
         <!-- <li><a href="Charts.html">APFT Explained</a></li> -->
         <li><a href="AboutUs.html">About Us</a></li>
       </ul>
@@ -31,7 +32,8 @@
     <form id="user-input" action="index.html" method="post">
       <fieldset>
 
-        <legend>APFT Score Cruncher</legend>
+        <legend class="tooltip">APFT Score Cruncher
+        <span class="tooltiptext">Enter number of repetitions completed for your push-ups and sit-ups events and your 2 mile run time</span></legend>
 
         <label for="pushUps">Push-ups:</label>
         <input id="pushUps" type="number" name="pushUps" size ="10" required/>
