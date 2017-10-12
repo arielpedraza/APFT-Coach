@@ -1,12 +1,11 @@
 input[type=text], select, textarea {
-    width: 35%; /* Full width */
-    padding: 10px; /* Some padding */
+    width: 35%;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px; /* Rounded borders */
+    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 25px;
     margin-bottom: 15px;
-    /*resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */*/
 }
 
 /* Style the submit button with a specific background color etc */
@@ -34,15 +33,25 @@ position: absolute;
 }
 
 
-body {
-font-family: 'Crimson Text', serif;
-background-image: url("../img/background2.png");
-background-size: cover;
+.container {
+  background-color: rgba(254, 195, 37, .3);
+  width: 960px;
+  height: 175px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-left: 30px;
+  /*margin-right: 150px;*/
+  margin-top: 10px;
+  padding: 15px;
 }
 
-body div {
-  width: 970px;
+
+body {
+  font-family: 'Crimson Text', serif;
+  background-image: url("../img/background2.png");
+  background-size: cover;
 }
+
 
 header nav {
   width: 960px;
@@ -112,7 +121,7 @@ footer nav {
 }
 
 footer ul {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 footer ul li {
@@ -131,6 +140,7 @@ footer ul li:first-child {
   width: 15px;
   text-align: center;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .fa:hover {
@@ -157,7 +167,6 @@ footer ul li:first-child {
   border-radius: 50%;
 }
 
-
 .fa-youtube {
   background: #CC181E;
   color: white;
@@ -172,25 +181,40 @@ footer ul li:first-child {
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid black;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  top: -5px;
+  right: 105%;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.reference-pane {
+  background-color: rgba(254, 195, 37, .3);
+  width: 960px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 150px;
+  margin-top: 10px;
+  font-family: 'Crimson Text', serif;
+}
+
+#contact {
+  margin-left: 30px;
+  width: 750px;
 }

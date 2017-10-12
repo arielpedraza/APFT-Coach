@@ -124,6 +124,14 @@ font-weight: bold;
 font-family: sans-serif;
 }
 
+.results-divider {
+  margin-top: 3px;
+  width: 70%;
+  height: 2px;
+  background: black;
+  overflow: hidden;
+}
+
 legend {
 font-family: 'Crimson Text', serif;
 background-color: rgba(254, 195, 37, .3);
@@ -133,7 +141,6 @@ border-radius: 5px;
 padding: 3px 8px;
 text-align: left;
 }
-
 
 .reference-pane {
   background-color: rgba(254, 195, 37, .3);
@@ -145,6 +152,9 @@ text-align: left;
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  padding: 3px;
 }
 
 .data-entry-pane {
@@ -164,12 +174,38 @@ fieldset label:nth-last-child(-n+2){
 
 fieldset input:nth-last-child(-n+2){
   margin-left: 142px;
-  margin-top: -34px;
+  margin-top: -38px;
 }
 
 fieldset label {
   background-color: rgba(238, 238, 238, 0.5);
   text-align: center;
+}
+
+.data-entry-pane p {
+  background-color: white;
+  width: 80px;
+
+}
+
+#pushUpScore {
+  margin-left: 42%;
+  margin-top: 7%;
+}
+
+#sitUpScore {
+  margin-left: 42%;
+  margin-top: 3%;
+}
+
+#runTimeScore {
+  margin-left: 42%;
+  margin-top: 2%;
+}
+
+#totalScore {
+  margin-left: 42%;
+  margin-top: 1%;
 }
 
 #gender {
@@ -182,6 +218,7 @@ fieldset label {
   width: 15px;
   text-align: center;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .fa:hover {
