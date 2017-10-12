@@ -64,13 +64,13 @@ header ul li {
 }
 
 /*div form {
-  text-align: center;
+  vertical-align: middle;
   margin-left: 25px;
   margin-top: 5px;
 }*/
 
 
-div form input {
+.data-entry-pane form input {
   font-family: 'Crimson Text', serif;
   display: block;
   /*margin-left: 200px;*/
@@ -108,6 +108,11 @@ footer ul li:first-child {
   margin-right: 580px;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 form label {
   font-family: 'Crimson Text', serif;
 }
@@ -123,6 +128,11 @@ text-align: left;
 font-weight: bold;
 font-family: sans-serif;
 }
+
+fieldset label, input, select, button {
+
+}
+
 
 legend {
 font-family: 'Crimson Text', serif;

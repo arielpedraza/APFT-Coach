@@ -1,8 +1,11 @@
 'use strict';
 
 var formEl = document.getElementById('user-input');
+var formEl2 = document.getElementById('user-input2');
 var genderInput = document.getElementsByClassName('female-input');
 var maleInput = document.getElementsByClassName('male-input');
+var firstSubmit = document.getElementById('first-submit');
+var secondSubmit = document.getElementById('second-submit');
 ServiceMember.allMembers = [];
 
 function ServiceMember(name, gender, age, height, weight) {
@@ -68,13 +71,16 @@ ServiceMember.prototype.displayNewInput = function() {
     for (i = 0; i < maleInput.length; i++) {
       maleInput[i].style.display = 'block';
     }
-    formEl.addEventListener('submit', bodyFatCalculationM);
+    formEl2.addEventListener('submit', bodyFatCalculationM);
+    secondSubmit.style.display = 'block';
   } else {
     for (i = 0; i < genderInput.length; i++) {
       genderInput[i].style.display = 'block';
     }
-    formEl.addEventListener('submit', bodyFatCalculationF);
+    formEl2.addEventListener('submit', bodyFatCalculationF);
+    secondSubmit.style.display = 'block';
   }
+  firstSubmit.style.display = 'none';
 };
 
 ServiceMember.prototype.getAge = function(dateString) {
@@ -209,9 +215,11 @@ function formEventHandler(event) {
 
 for (var i = 0; i < genderInput.length; i++) {
   genderInput[i].style.display = 'none';
+  secondSubmit.style.display = 'none';
 }
 for (i = 0; i < maleInput.length; i++) {
   maleInput[i].style.display = 'none';
+  secondSubmit.style.display = 'none';
 }
 
 formEl.addEventListener('submit', formEventHandler);
