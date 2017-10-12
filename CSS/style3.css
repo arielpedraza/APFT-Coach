@@ -1,6 +1,44 @@
-* {
-
+input[type=text], select, textarea {
+    width: 35%; /* Full width */
+    padding: 10px; /* Some padding */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    /*resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */*/
 }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: White;
+    color: black;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #888888;
+}
+
+label {
+position: absolute;
+}
+/* Add a background color and some padding around the form */
+.container {
+  background-color: rgba(254, 195, 37, .3);
+  width: 960px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 150px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
 
 body {
 font-family: 'Crimson Text', serif;
@@ -57,34 +95,15 @@ header h3 {
   margin-right: 300px;
 }
 
+ul h3 {
+  font-family: 'Lobster Two', cursive;
+}
+
 header ul li {
   display: inline-block;
   margin-top: 60px;
   margin-right: 10px;
 }
-
-div form {
-  text-align: center;
-  margin-left: 25px;
-  margin-top: 5px;
-}
-
-
-div form input {
-  font-family: 'Crimson Text', serif;
-  display: block;
-  /*margin-left: 200px;*/
-  border: 0;
-  margin-top: 2px;
-  background-color: rgba(226, 226, 221, 1);
-  border: none;
-  color: black;
-  padding: 1px 2px;
-  text-decoration: none;
-  margin: 1px 2px;
-  cursor: pointer;
-}
-
 
 footer {
   clear: both;
@@ -193,6 +212,7 @@ fieldset label {
   padding: 10px;
   font-size: 30px;
   width: 15px;
+  margin-top: 10px;
   text-align: center;
   text-decoration: none;
 }
@@ -221,7 +241,6 @@ fieldset label {
   border-radius: 50%;
 }
 
-
 .fa-youtube {
   background: #CC181E;
   color: white;
@@ -231,23 +250,39 @@ fieldset label {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px solid black;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 300px;
+    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    position: absolute;
-      z-index: 1;
-      top: -5px;
-      left: 105%;
+
+    /* Position the tooltip */
+    top: -5px;
+    right: 105%;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.reference-pane {
+  background-color: rgba(254, 195, 37, .3);
+  width: 960px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 150px;
+  margin-top: 10px;
+}
+
+#contact {
+  margin-left: 30px;
+  width: 750px;
 }
