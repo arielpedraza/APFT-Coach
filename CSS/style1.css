@@ -195,7 +195,6 @@ text-align: left;
 
 fieldset {
   margin-left: 340px;
-  margin-top: 5px;
 }
 
 
@@ -203,11 +202,23 @@ fieldset {
   display: block;
 }
 
+.next-back-buttons {
+  opacity: 0.7;
+  margin-top: 5px;
+  margin-left: 400px;
+  margin-bottom: 5px;
+  border: 10px;
+}
+
+.back-button {
+  opacity: 0.3;
+  margin-right: 20px;
+}
+
 .fa {
   padding: 10px;
   font-size: 30px;
   width: 15px;
-  margin-top: 10px;
   text-align: center;
   text-decoration: none;
 }
