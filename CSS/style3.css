@@ -1,44 +1,6 @@
-input[type=text], select, textarea {
-    width: 35%; /* Full width */
-    padding: 10px; /* Some padding */
-    border: 1px solid #ccc;
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    /*resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */*/
-}
+* {
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: White;
-    color: black;
-    padding: 5px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
-
-input[type=submit]:hover {
-    background-color: #888888;
-}
-
-label {
-position: absolute;
-}
-/* Add a background color and some padding around the form */
-.container {
-  background-color: rgba(254, 195, 37, .3);
-  width: 960px;
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 15px;
-  margin-left: 30px;
-  margin-right: 150px;
-  margin-top: 10px;
-  padding: 10px;
-}
-
 
 body {
 font-family: 'Crimson Text', serif;
@@ -95,15 +57,34 @@ header h3 {
   margin-right: 300px;
 }
 
-ul h3 {
-  font-family: 'Lobster Two', cursive;
-}
-
 header ul li {
   display: inline-block;
   margin-top: 60px;
   margin-right: 10px;
 }
+
+div form {
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+
+div form input {
+  font-family: 'Crimson Text', serif;
+  display: block;
+  /*margin-left: 200px;*/
+  border: 0;
+  margin-top: 2px;
+  background-color: rgba(226, 226, 221, 1);
+  border: none;
+  color: black;
+  padding: 1px 2px;
+  text-decoration: none;
+  margin: 1px 2px;
+  cursor: pointer;
+}
+
 
 footer {
   clear: both;
@@ -125,6 +106,68 @@ footer ul li {
 
 footer ul li:first-child {
   margin-right: 580px;
+}
+
+form label {
+  font-family: 'Crimson Text', serif;
+}
+
+
+fieldset {
+font-family: 'Crimson Text', serif;
+position: absolute;
+border: 0;
+padding-left: 30px;
+width: 600px;
+text-align: left;
+font-weight: bold;
+font-family: sans-serif;
+}
+
+legend {
+font-family: 'Crimson Text', serif;
+background-color: rgba(254, 195, 37, .3);
+font-size: 25px;
+border: .5px solid black;
+border-radius: 5px;
+padding: 3px 8px;
+text-align: left;
+}
+
+.reference-pane {
+  background-color: rgba(254, 195, 37, .3);
+  width: 710px;
+  height: 180px;
+  border: 2px solid black;
+  border-radius: 15px;
+  float: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.data-entry-pane {
+  background-color: rgba(254, 195, 37, .3);
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 960px;
+  height: 325px;
+  margin-top: 220px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+fieldset {
+  margin-left: 340px;
+}
+
+fieldset label {
+  text-align: center;
+}
+
+#gender {
+  display: block;
 }
 
 .fa {
@@ -160,6 +203,7 @@ footer ul li:first-child {
   border-radius: 50%;
 }
 
+
 .fa-youtube {
   background: #CC181E;
   color: white;
@@ -169,39 +213,23 @@ footer ul li:first-child {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px solid black;
+    border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 300px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
-    /* Position the tooltip */
-    top: -5px;
-    right: 105%;
+    position: absolute;
+      z-index: 1;
+      top: -5px;
+      left: 105%;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-}
-
-.reference-pane {
-  background-color: rgba(254, 195, 37, .3);
-  width: 960px;
-  height: 500px;
-  border: 2px solid black;
-  border-radius: 15px;
-  margin-left: 30px;
-  margin-right: 150px;
-  margin-top: 10px;
-}
-
-#contact {
-  margin-left: 30px;
-  width: 750px;
 }

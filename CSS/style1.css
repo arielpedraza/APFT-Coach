@@ -167,6 +167,9 @@ text-align: left;
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
 }
 
 .sign-log {
