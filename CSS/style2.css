@@ -153,6 +153,7 @@ footer ul li:first-child {
   width: 15px;
   text-align: center;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .fa:hover {
