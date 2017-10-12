@@ -1,5 +1,5 @@
 * {
-/*border: 1px solid red;*/
+
 }
 
 body {
@@ -10,6 +10,7 @@ background-size: cover;
 header nav {
   width: 960px;
   margin-left: 30px;
+  height: 120px;
   background-color: #fec325;
 }
 
@@ -18,8 +19,8 @@ header {
 }
 
 a {
-  font-family: 'Anton', sans-serif;
-  color: blue;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
 }
 
 header img {
@@ -30,7 +31,7 @@ header img {
 }
 
 header h3 {
-  font-family: 'Bevan', open sans;
+  font-family: 'Josefin Sans', sans-serif;
   position: absolute;
   margin-top: 100px;
   margin-right: 300px;
@@ -38,8 +39,8 @@ header h3 {
 
 header ul li {
   display: inline-block;
-  margin-top: 40px;
-  margin-right: 20px;
+  margin-top: 60px;
+  margin-right: 10px;
 }
 
 /*div form {
@@ -48,12 +49,13 @@ header ul li {
   margin-top: 5px;
 }*/
 
+
 div form input {
   display: block;
   /*margin-left: 200px;*/
   border: 0;
   margin-top: 2px;
-  background-color: rgba(226, 226, 221, 0.8);
+  background-color: rgba(226, 226, 221, 1);
   border: none;
   color: black;
   padding: 1px 2px;
@@ -97,7 +99,7 @@ font-family: sans-serif;
 }
 
 legend {
-background-color: #fec325;
+background-color: rgba(254, 195, 37, .3);
 font-size: 25px;
 border: .5px solid black;
 border-radius: 5px;
@@ -106,8 +108,12 @@ text-align: left;
 }
 
 .reference-pane {
+  background-color: rgba(254, 195, 37, .3);
+  width: 710px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 15px;
   opacity: 0.3;
-  border: 2px red;
   float: left;
   margin-left: 30px;
   margin-right: 150px;
@@ -128,12 +134,12 @@ text-align: left;
 }
 
 .data-entry-pane {
-  position: relative;
+  background-color: rgba(254, 195, 37, .3);
   border: 2px solid black;
   border-radius: 15px;
   width: 960px;
   height: 325px;
-  margin-top: 5px;
+  margin-top: 250px;
   margin-left: 10px;
   margin-right: 10px;
 }
