@@ -203,6 +203,11 @@ fieldset label {
   display: block;
 }
 
+#weight-results {
+  float: right;
+  margin-right: 50px;
+}
+
 .fa {
   padding: 10px;
   font-size: 30px;

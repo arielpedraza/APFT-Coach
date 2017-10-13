@@ -168,3 +168,30 @@ pushUpsEntry.onblur = handlePushUps;
 sitUpsEntry.onblur = handleSitUps;
 runTimeMin.onblur = handleRunMin;
 runTimeSec.onblur = handleRunSec;
+
+function displayWeightResults() {
+  var divEl = document.getElementById('weight-results');
+  var newTextEl;
+  if (ServiceMember.allMembers[0].isFat === true) {
+    newTextEl = document.createElement('p');
+    newTextEl.textContent = 'Weight standards not met.';
+    divEl.appendChild(newTextEl);
+    newTextEl = document.createElement('p');
+    newTextEl.textContent = 'Body Fat: ' + ServiceMember.allMembers[0].fatPercent + '%';
+    divEl.appendChild(newTextEl);
+    if (ServiceMember.allMembers[0].passBodyComp) {
+      newTextEl = document.createElement('p');
+      newTextEl.textContent = 'Body composition passed!';
+      divEl.appendChild(newTextEl);
+    } else {
+      newTextEl = document.createElement('p');
+      newTextEl.textContent = 'Body composition failed.';
+      divEl.appendChild(newTextEl);
+    }
+  } else {
+    newTextEl.textContent = 'Weight standards met!';
+    divEl.appendChild(newTextEl);
+  }
+}
+
+displayWeightResults();
