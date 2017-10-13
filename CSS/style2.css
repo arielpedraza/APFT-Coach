@@ -46,6 +46,8 @@ div#contact {
   margin-top: 20px;
   padding: 5px;
   margin: 20px;
+  margin: 0 auto 10px;
+
 }
 
 
@@ -58,12 +60,12 @@ body {
 
 header nav {
   width: 960px;
-  margin-left: 30px;
+  margin: 0 auto;
   height: 120px;
   background: #fec325;
   background: linear-gradient(to bottom, #fec325, #ead923);
   box-shadow: 5px 5px 5px #888888;
-
+  margin: 0 auto 10px;
 }
 
 header {
@@ -129,6 +131,7 @@ footer {
 }
 
 footer nav {
+  margin: 0 auto 10px;
   width: 960px;
 }
 
@@ -245,13 +248,13 @@ footer ul li:first-child {
   height: 630px;
   border: 2px solid black;
   border-radius: 15px;
-  margin-left: 30px;
-  margin-top: 10px;
   font-family: 'Crimson Text', serif;
   font-size: 17px;
+  margin: 0 auto 15px;
 }
 
 #contact {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
   width: 750px;
+  margin: 0 auto 10px;
 }
