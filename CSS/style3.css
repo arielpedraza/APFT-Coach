@@ -164,8 +164,8 @@ fieldset label:nth-last-child(-n+2){
 }
 
 fieldset input:nth-last-child(-n+2){
-  margin-left: 142px;
-  margin-top: -43px;
+  margin-left: 150px;
+  margin-top: -44px;
 }
 
 fieldset label {
@@ -182,21 +182,25 @@ fieldset label {
 #pushUpScore {
   margin-left: 42%;
   margin-top: 7%;
+  border: 2px solid black;
 }
 
 #sitUpScore {
   margin-left: 42%;
   margin-top: 3%;
+  border: 2px solid black;
 }
 
 #runTimeScore {
   margin-left: 42%;
   margin-top: 2%;
+  border: 2px solid black;
 }
 
 #totalScore {
   margin-left: 42%;
   margin-top: 1%;
+  border: 2px solid black;
 }
 
 #gender {
@@ -206,6 +210,12 @@ fieldset label {
 #weight-results {
   float: right;
   margin-right: 50px;
+}
+
+#weight-results p {
+  border: 2px solid black;
+  width: 100px;
+  text-align: center;
 }
 
 .fa {
