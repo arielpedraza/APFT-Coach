@@ -177,7 +177,11 @@ function displayWeightResults() {
     newTextEl.textContent = 'Weight standards not met.';
     divEl.appendChild(newTextEl);
     newTextEl = document.createElement('p');
-    newTextEl.textContent = 'Body Fat: ' + ServiceMember.allMembers[0].fatPercent + '%';
+    if (ServiceMember.allMembers[0].fatPercent > 0) {
+      newTextEl.textContent = 'Body Fat: ' + ServiceMember.allMembers[0].fatPercent + '%';
+    } else {
+      newTextEl.textContent = 'Body Fat calculation outside chart range.';
+    }
     divEl.appendChild(newTextEl);
     if (ServiceMember.allMembers[0].passBodyComp) {
       newTextEl = document.createElement('p');
@@ -189,6 +193,7 @@ function displayWeightResults() {
       divEl.appendChild(newTextEl);
     }
   } else {
+    newTextEl = document.createElement('p');
     newTextEl.textContent = 'Weight standards met!';
     divEl.appendChild(newTextEl);
   }
