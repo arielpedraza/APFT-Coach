@@ -119,7 +119,9 @@ header ul li {
 body section div ul {
   text-decoration: none;
   list-style: none;
-  margin-right: 10px;
+  margin: 0 5px;
+  display: inline-block;
+  float: right;
 }
 
 footer {
@@ -149,7 +151,7 @@ footer ul li:first-child {
   padding: 10px;
   width: 11%;
   height: 11%;
-  /*margin-top: 10px;*/
+  margin-top: 15px;
   border-radius: 50%;
 }
 
@@ -158,7 +160,7 @@ footer ul li:first-child {
   padding: 10px;
   width: 11%;
   height: 11%;
-  /*margin-top: 10px;*/
+  margin-top: 15px;
   border-radius: 50%;
 }
 
@@ -167,7 +169,7 @@ footer ul li:first-child {
   padding: 10px;
   width: 11%;
   height: 11%;
-  /*margin-top: 10px;*/
+  margin-top: 15px;
   border-radius: 50%;
 }
 
@@ -209,8 +211,6 @@ footer ul li:first-child {
   color: white;
   border-radius: 50%;
 }
-
-
 
 #contact {
   margin-left: 30px;
