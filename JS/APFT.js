@@ -201,9 +201,8 @@ function formEventHandler(event) {
   var enteredName = event.target.name.value;
   var enteredGender = parseInt(event.target.gender.value);
   var enteredAge = parseInt(event.target.age.value);
-  var enteredHeight = parseInt(event.target.height.value);
+  var enteredHeight = parseFloat(event.target.height.value);
   var enteredWeight = parseInt(event.target.weight.value);
-
   var newUser = new ServiceMember(enteredName, enteredGender, enteredAge, enteredHeight, enteredWeight);
   newUser.setAgeRange();
   newUser.checkIfFat();
