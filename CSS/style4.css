@@ -4,6 +4,15 @@ background-image: url("../img/background2.png");
 background-size: cover;
 }
 
+h2 {
+  margin: 10px auto;
+  text-align: center;
+  background-color: white;
+  border-left: 10px solid #ccc;
+  width: 620px;
+  height: 1.5em;
+}
+
 header nav {
   width: 960px;
   margin: 0 auto;
@@ -287,6 +296,16 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
 blockquote p {
   margin: 10px auto;
   display: inline;
